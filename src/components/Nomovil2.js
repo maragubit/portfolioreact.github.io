@@ -7,7 +7,7 @@ function Nomovil2(){
   const lock=()=>{
     Cookies.get('key')==="off"?alert('la puerta está cerrada.\nNecesitas una llave para salir'):alert('Enhorabuena, has conseguido salir!')
   };
-  
+
   const imagenActual = ()=>{
    if(Cookies.get('luz')==='on'){
     return Cookies.get('luminol')==='on' ? 'conluz2uv.jpg' : 'conluz2.jpg';
@@ -17,6 +17,7 @@ function Nomovil2(){
    }
    
   };
+  console.log(imagenActual);
   const [cambioImagen,setCambioImagen]=useState(imagenActual());
   const [luminol,setLuminol]=useState(Cookies.get('luminol'));
   const cambioLuminol=()=>{setLuminol((prevLuminol)=>(prevLuminol==='off'?'on':'off'));};
@@ -37,7 +38,6 @@ function Nomovil2(){
       }
     });
   }, [luminol]);
-  console.log(cambioImagen);
   return (
   <div className="portada">
     <div className="dash">
