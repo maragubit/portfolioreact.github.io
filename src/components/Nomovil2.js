@@ -9,7 +9,7 @@ function Nomovil2(){
   }
   const imagenActual = ()=>{
    if(Cookies.get('luz')==='on'){
-    return Cookies.get('luminol')==='on' ? 'conluz2luminol.jpg' : 'conluz2.jpg';
+    return Cookies.get('luminol')==='on' ? 'conluz2uv.jpg' : 'conluz2.jpg';
    }
    if (Cookies.get('luz')==='off'){
     return Cookies.get('luminol')==='on' ? 'sinluz2luminol.jpg' : 'sinluz2.jpg';
@@ -36,7 +36,7 @@ function Nomovil2(){
       }
     });
   }, [luminol]);
-  console.log(imagenActual());
+  console.log(cambioImagen);
   return (
   <div className="portada">
     <div className="dash">
