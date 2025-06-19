@@ -10,10 +10,10 @@ function Nomovil2(){
 
   const imagenActual = ()=>{
    if(Cookies.get('luz')==='on'){
-    return Cookies.get('luminol')==='on' ? 'conluz2uv.jpg' : 'conluz2.jpg';
+    return Cookies.get('luminol')==='on' ? '/conluz2uv.jpg' : '/conluz2.jpg';
    }
    else{
-    return Cookies.get('luminol')==='on' ? 'sinluz2luminol.jpg' : 'sinluz2.jpg';
+    return Cookies.get('luminol')==='on' ? '/sinluz2luminol.jpg' : '/sinluz2.jpg';
    }
    
   };
@@ -24,17 +24,17 @@ function Nomovil2(){
   useEffect(() => {
     Cookies.set('luminol', luminol, { expires: 7 });
     setCambioImagen((prevCambioImagen)=>{
-      if (prevCambioImagen==='sinluz2.jpg'){
-        return 'sinluz2luminol.jpg';
+      if (prevCambioImagen==='/sinluz2.jpg'){
+        return '/sinluz2luminol.jpg';
       }
-      else if (prevCambioImagen==='sinluz2luminol.jpg'){
-        return 'sinluz2.jpg';
+      else if (prevCambioImagen==='/sinluz2luminol.jpg'){
+        return '/sinluz2.jpg';
       }
-      else if (prevCambioImagen==='conluz2.jpg'){
-        return 'conluz2uv.jpg';
+      else if (prevCambioImagen==='/conluz2.jpg'){
+        return '/conluz2uv.jpg';
       }
       else{
-        return 'conluz2.jpg'
+        return '/conluz2.jpg'
       }
     });
   }, [luminol]);
