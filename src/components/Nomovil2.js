@@ -8,18 +8,13 @@ function Nomovil2(){
     Cookies.get('key')==="off"?alert('la puerta está cerrada.\nNecesitas una llave para salir'):alert('Enhorabuena, has conseguido salir!')
   }
   const imagenActual = ()=>{
-   if(Cookies.get('luminol')==='on' && Cookies.get('luz')==='off'){
-    return 'sinluz2luminol.jpg';
+   if(Cookies.get('luz')==='on'){
+    return Cookies.get('luminol')==='on' ? 'conluz2luminol.jpg' : 'conluz2.jpg';
    }
-   else if (Cookies.get('luminol')==='off' && Cookies.get('luz')==='off'){
-    return 'sinluz2.jpg';
+   if (Cookies.get('luz')==='off'){
+    return Cookies.get('luminol')==='on' ? 'sinluz2luminol.jpg' : 'sinluz2.jpg';
    }
-   else if (Cookies.get('luminol')==='on' && Cookies.get('luz')==='on'){
-    return 'conluz2uv.jpg';
-   }
-   else if (Cookies.get('luminol')==='off' && Cookies.get('luz')==='on'){
-    return 'conluz2.jpg';
-   }
+   
   };
   const [cambioImagen,setCambioImagen]=useState(imagenActual());
   const [luminol,setLuminol]=useState(Cookies.get('luminol'));
