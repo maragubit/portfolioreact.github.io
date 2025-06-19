@@ -17,7 +17,7 @@ function Nomovil2(){
    else if (Cookies.get('luminol')==='on' && Cookies.get('luz')==='on'){
     return 'conluz2uv.jpg';
    }
-   else {
+   else if (Cookies.get('luminol')==='off' && Cookies.get('luz')==='on'){
     return 'conluz2.jpg';
    }
   };
