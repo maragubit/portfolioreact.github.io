@@ -6,12 +6,13 @@ function Nomovil2(){
   
   const lock=()=>{
     Cookies.get('key')==="off"?alert('la puerta está cerrada.\nNecesitas una llave para salir'):alert('Enhorabuena, has conseguido salir!')
-  }
+  };
+  
   const imagenActual = ()=>{
    if(Cookies.get('luz')==='on'){
     return Cookies.get('luminol')==='on' ? 'conluz2uv.jpg' : 'conluz2.jpg';
    }
-   if (Cookies.get('luz')==='off'){
+   else{
     return Cookies.get('luminol')==='on' ? 'sinluz2luminol.jpg' : 'sinluz2.jpg';
    }
    
