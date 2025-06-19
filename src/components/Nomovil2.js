@@ -20,7 +20,7 @@ function Nomovil2(){
   console.log(imagenActual());
   const [cambioImagen,setCambioImagen]=useState(imagenActual());
   const [luminol,setLuminol]=useState(Cookies.get('luminol'));
-  const cambioLuminol=()=>{setLuminol((prevLuminol)=>(prevLuminol==='off'?'on':'off'));};
+  const cambioLuminol=()=>{setLuminol(()=>(Cookies.get('luminol')==='off'?'on':'off'));};
   useEffect(() => {
     Cookies.set('luminol', luminol, { expires: 7 });
     setCambioImagen((prevCambioImagen)=>{
