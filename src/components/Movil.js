@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Link} from "react-router-dom";
-import AboutMe from "./AboutMe";
-import Proyectos from "./Proyectos";
-import Habilidades from "./Habilidades";
-import Contacto from "./Contacto";
-import Joey from "./Joey";
+import AboutMe from "../pages/zone1/AboutMe";
+import Proyectos from "../pages/zone1/Proyectos";
+import Habilidades from "../pages/zone2/Habilidades";
+import Contacto from "../pages/zone1/Contacto";
+import Joey from "../pages/zone1/Joey";
 
 
 function Movil(){
