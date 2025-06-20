@@ -29,7 +29,6 @@ function App() {
   if (!Cookies.get('key')) {
     Cookies.set('key', 'off', { expires: 7 }); // Expira en 7 días
   }
-
   return (
     <>
     <div className='cookies'></div>
