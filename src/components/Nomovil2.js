@@ -5,7 +5,7 @@ function Nomovil2(){
   
   
   const lock=()=>{
-    Cookies.get('key')==="off"?alert('la puerta está cerrada.\nNecesitas una llave para salir'):alert('Enhorabuena, has conseguido salir!')
+    Cookies.get('key')==="off" ? alert('la puerta está cerrada.\nNecesitas una llave para salir') : alert('Enhorabuena, has conseguido salir!');
   };
 
   const imagenActual = ()=>{
@@ -17,24 +17,20 @@ function Nomovil2(){
    }
    
   };
-  console.log(imagenActual());
   const [cambioImagen,setCambioImagen]=useState(imagenActual());
   const [luminol,setLuminol]=useState(Cookies.get('luminol'));
-  const cambioLuminol=()=>{setLuminol(()=>(Cookies.get('luminol')==='off'?'on':'off'));};
-  useEffect(() => {
+  const cambioLuminol=()=>{setLuminol((prevLuminol)=>(prevLuminol==='off'?'on':'off'));};
+   useEffect(() => {
     Cookies.set('luminol', luminol, { expires: 7 });
-    setCambioImagen((prevCambioImagen)=>{
-      if (prevCambioImagen==='/sinluz2.jpg'){
-        return '/sinluz2luminol.jpg';
-      }
-      else if (prevCambioImagen==='/sinluz2luminol.jpg'){
-        return '/sinluz2.jpg';
-      }
-      else if (prevCambioImagen==='/conluz2.jpg'){
-        return '/conluz2uv.jpg';
-      }
-      else{
-        return '/conluz2.jpg'
+
+    const luminolCookie = Cookies.get('luminol');
+    const luz = Cookies.get('luz');
+
+    setCambioImagen(() => {
+      if (luz === 'on') {
+        return luminolCookie === 'on' ? '/conluz2uv.jpg' : '/conluz2.jpg';
+      } else {
+        return luminolCookie === 'on' ? '/sinluz2luminol.jpg' : '/sinluz2.jpg';
       }
     });
   }, [luminol]);
