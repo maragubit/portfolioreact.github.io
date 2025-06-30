@@ -10,7 +10,7 @@ function ProjectList(){
                         <h3>Web Guardian</h3>
                         <p>Aplicacion web para realizar informes de ciberseguridad</p>
                         <p>Back-end: Laravel (php)</p>
-                        <p> <a href="https:/webguardian.es" target="_blank">webguardian.es</a></p>
+                        <p> <a href="https://webguardian.es" target="_blank">webguardian.es</a></p>
                     </div>
                 </div>
                 <div>
