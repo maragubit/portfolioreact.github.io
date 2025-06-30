@@ -36,6 +36,7 @@ function Nomovil2(){
   }, [luminol]);
   return (
   <div className="portada">
+    <div className="title"><img src="/title.png" width="300px"></img></div>
     <div className="dash">
       <div className="align">
         <div className="icon2">

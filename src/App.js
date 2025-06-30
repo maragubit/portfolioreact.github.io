@@ -31,7 +31,6 @@ function App() {
   }
   return (
     <>
-    <div className='cookies'></div>
     <div><CookieConsent /></div>
     <div className="App">
    
