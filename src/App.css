@@ -17,6 +17,9 @@ body{
   padding-top: 20px;
   padding-bottom: 20px;
 }
+.title img{
+  margin-right: 55px;
+}
 
 .menu{
   border:solid 1px #de3be8;
