@@ -5,13 +5,9 @@ body{
   background-color: rgb(0, 0, 0);
 }
 .portada{
-  min-width: 1500px;
+  min-width: 1100px;
 }
 
-.soga{
-  cursor: pointer;
-  margin-right:40px;
-}
 .title{
   background-color: black;
   max-width:1100px;
@@ -20,25 +16,28 @@ body{
   padding-top: 20px;
   padding-bottom: 20px;
 }
+.title img{
+  cursor: pointer;
+}
 
 /* SVG CLICK */
 #aboutMe{
   position: absolute;
   top:5%;
-  left:48%;
+  left:43%;
   opacity: 0;
 }
 #myProjects{
   position: absolute;
   top:42%;
-  left:43%;
+  left:38%;
   opacity: 0;
 }
 
 #light{
   position: absolute;
   top:42%;
-  left:14%;
+  left:9%;
   cursor: pointer;
   opacity: 0;
   
