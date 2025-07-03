@@ -68,7 +68,10 @@ function Nomovil(){
 
     return (
         <div className="portada">
-          <div className="title"><img src="/title.png" width="300px" onClick={()=>fast()}></img></div>
+          <div className="title">
+            <img src="/title.png" width="300px" ></img>
+            <svg className="menu" onClick={()=>fast()} xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 1025 1024"><path fill="#de3be8" d="M896.428 640h-768q-53 0-90.5-37.5T.428 512t37.5-90.5t90.5-37.5h768q53 0 90.5 37.5t37.5 90.5t-37.5 90.5t-90.5 37.5m0-384h-768q-53 0-90.5-37.5T.428 128t37.5-90.5t90.5-37.5h768q53 0 90.5 37.5t37.5 90.5t-37.5 90.5t-90.5 37.5m-768 512h768q53 0 90.5 37.5t37.5 90.5t-37.5 90.5t-90.5 37.5h-768q-53 0-90.5-37.5T.428 896t37.5-90.5t90.5-37.5"/></svg>
+            </div>
           <div className="dash">
             <div className="align">              
               <img id='imagen' className='center'src={imagen} alt="Portfolio" width="900px"></img>

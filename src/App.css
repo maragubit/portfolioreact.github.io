@@ -16,7 +16,10 @@ body{
   padding-top: 20px;
   padding-bottom: 20px;
 }
-.title img{
+
+.menu{
+  position:absolute;
+  right: 200px;
   cursor: pointer;
 }
 
