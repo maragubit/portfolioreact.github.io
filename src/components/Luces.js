@@ -1,6 +1,7 @@
 import Cookies from 'js-cookie';
 import { useEffect,useState } from 'react';
 import Pistas from './Pistas';
+import { Icon } from '@iconify/react';
 function Luces(){
     const [luz, setLuz] = useState(Cookies.get('luz') || '');
     const [luminol, setLuminol] = useState(Cookies.get('luminol') || '');
@@ -43,7 +44,7 @@ function Luces(){
             </span>
             {mostrarPistas && 
                 <div className='pistas'>
-                    <img className="close" src="/close.svg" alt="close" onClick={() => setMostrarPistas(false)}/>
+                    <Icon className="close" icon="solar:close-square-bold" width="35px" color="#9c2796ff" onClick={() => setMostrarPistas(false)}/> 
                     <Pistas/>
                 </div>
             
