@@ -12,6 +12,11 @@ import Cookies from 'js-cookie';
 import Microscopio from './pages/zone2/Microscopio';
 import Keybox from './pages/zone2/Keybox';
 import CookieConsent from './components/CookieConsent';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import AppLayout from './layouts/AppLayout';
+import AppLayout2 from './layouts/AppLayout2';
+import Contacto from './pages/zone1/Contacto';
+
 
 
 
@@ -35,23 +40,23 @@ function App() {
     <div><CookieConsent /></div>
     <div className="App">
    
-      <BrowserRouter>
+      
         <Routes>
-          <Route path="/" element={<Nomovil />}>
+
+          <Route path="/" element={<AppLayout/>}>
             <Route path="aboutMe" element={<AboutMe />} />
             <Route path="myProjects" element={<Proyectos/>} />
+            <Route path="contact" element={<Contacto/>} />
           </Route>
-        
-          <Route path="/zone2" element={<Nomovil2/>}>
-            <Route path="/zone2/skills" element={<Habilidades/>}/>
-            <Route path="/zone2/microscope" element={<Microscopio/>}/>
-            <Route path="/zone2/keybox" element={<Keybox/>}/>
 
+          <Route path="zone2/" element={<AppLayout2/>}>
+            <Route path="skills" element={<Habilidades/>}/>
+            <Route path="microscope" element={<Microscopio/>}/>
+            <Route path="keybox" element={<Keybox/>}/>
           </Route>
-        </Routes>
-      </BrowserRouter>     
+          
+        </Routes>  
     </div>
-    <Luces/>
     </>
   );
 }

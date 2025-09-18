@@ -2,31 +2,80 @@
   text-align: center;
 }
 body{
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0) !important;
 }
-.portada{
-  min-width: 1100px;
+:root{
+  --primary:#eb4cc8;
+  --secundary:#beb317;
+  --opacity:0;
 }
 
+.submenuBoton{
+  margin-left:10px;
+  margin-bottom: 15px;;
+  background-color:var(--secundary) !important;
+  border-color: var(--secundary) !important;
+  color:black !important;
+}
+.submenuBoton:hover {
+  background-color: #dfd335 !important;
+}
+.submenuBoton a{
+  color:black !important;
+  text-decoration: none !important;
+}
 .title{
-  background-color: black;
-  max-width:900px;
   margin-left: auto;
   margin-right: auto;
+  max-width: 900px !important;
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
 }
-.title img{
-  margin-right: 55px;
-}
 
+.titleLogo{
+  color : var(--primary) !important;
+  font-size: 50px;
+  text-align: center;
+  font-family: Ink Free;
+  margin-left: -48.06px;
+  font-weight: bold;
+}
+.subtitleLogo{
+  color : var(--primary) !important;
+  font-size: 20px;
+  text-align: center;
+  font-family: Ink Free;
+  margin-left: auto;
+  margin-right: auto;
+}
 .menu{
-  border:solid 1px #de3be8;
+  border:solid 1px var(--primary);
   border-radius: 5px;
   padding: 1%;
   float: left;
   cursor: pointer;
+  margin-top : 10px;
+}
+@media (max-width:500px){
+  .menu{
+    margin-left:10px;
+  }
+  .titleLogo{
+  color : var(--primary) !important;
+  font-size: 50px;
+  text-align: center;
+  font-family: Ink Free;
+  margin-left: 0px;
+}
+}
+
+ .align{
+  position:relative;
+  width:970px;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-flex;
 }
 
 /* SVG CLICK */
@@ -34,70 +83,166 @@ body{
   position: absolute;
   top:5%;
   left:43%;
-  opacity: 0;
+  opacity: var(--opacity);
 }
 #myProjects{
   position: absolute;
   top:42%;
   left:38%;
-  opacity: 0;
+  opacity: var(--opacity);
 }
 
 #light{
   position: absolute;
   top:42%;
-  left:9%;
+  left:4%;
   cursor: pointer;
-  opacity: 0;
+  opacity: var(--opacity);
   
 }
 #luminol{
   position: absolute;
   top:42%;
-  right:29%;
+  right:26%;
   cursor: pointer;
-  opacity: 0; 
+  opacity: var(--opacity); 
 }
 #habilidades{
   position: absolute;
   top:33%;
-  left:35%;
+  left:33%;
   cursor: pointer;
-  opacity: 0; 
+  opacity: var(--opacity); 
 }
 #github{
   position: absolute;
   top:10%;
-  left:27%;
+  left:20%;
   cursor: pointer;
-  opacity: 0;
+  opacity: var(--opacity);
 }
 
 #lock{
   position: absolute;
   top:45%;
-  right:17%;
+  right:13%;
   cursor: pointer;
-  opacity: 0;
+  opacity: var(--opacity);
   
 }
 #microscope{
   position: absolute;
   top:34%;
-  left:42%;
+  left:41%;
   cursor: pointer;
-  opacity: 0;
+  opacity: var(--opacity);
 }
 
 #keybox{
   position: absolute;
   top:34%;
-  right:24%;
+  right:20%;
   cursor: pointer;
-  opacity: 0;
+  opacity: var(--opacity);
   
 }
  /* --------------------------- */
+
+
+@media (max-width: 500px) {
+  
+  .align{
+  width: 100%; /* evita que se desborde el body */
+  max-width: 970px;
+  position:relative;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-flex;
+  overflow-x: scroll !important;
+  
+}
+}
+
+ @media (max-width:550px){
+  /* SVG CLICK */
+
+
+#aboutMe{
+  position:absolute;
+  opacity: var(--opacity);
+  top:25px !important;
+  left:399px;
+}
+#myProjects{
+  position: absolute;
+  top:240px;
+  left:350px;
+  opacity: var(--opacity);
+}
+
+#light{
+  position: absolute;
+  top:240px;
+  left:43px;
+  cursor: pointer;
+  opacity: var(--opacity);
+ 
+
+  
+}
+#luminol{
+  position: absolute;
+  top:250px;
+  right:0px;
+  left:690px;
+
+  cursor: pointer;
+  opacity: var(--opacity); 
+}
+#habilidades{
+  position: absolute;
+  top:200px;
+  left:320px;
+  cursor: pointer;
+  opacity: var(--opacity); 
+}
+#github{
+  position: absolute;
+  top:40px;
+  left:190px;
+  cursor: pointer;
+  opacity: var(--opacity);
+}
+
+#lock{
+  position: absolute;
+  top:280px;
+  right:0px;
+  left:810px;
+  cursor: pointer;
+  opacity: var(--opacity);
+  
+}
+#microscope{
+  position: absolute;
+  top:200px;
+  left:400px;
+  cursor: pointer;
+  opacity: var(--opacity);
+}
+
+#keybox{
+  position: absolute;
+  top:210px;
+  right:0px;
+  cursor: pointer;
+  left:745px;
+  opacity: var(--opacity);
+  
+}
+ /* --------------------------- */
+
+ }
 a :visited{
   color:#d3a7eb;
 }
@@ -106,10 +251,13 @@ a{
 }
 .dash {
   position:relative;
-  max-width:1100px;
+  width:1100px;
   margin-left: auto;
   margin-right: auto;
   background-color: black;
+}
+@media(max-width:500px){
+ 
 }
 .center { /*clase de la imagen del mapa*/
   display: block;
@@ -127,17 +275,14 @@ a{
     margin-top: 20%;
   }
 
-.align{
-  display: inline-flex;
-}
+
 
 .indexBody{ /*Body html principal*/
   background-color: black;
 }
 /* LUCES COMPONENTE */
 .cookies{
-  color:#e13beb;
-  width:1100px;
+  color:var(--primary);
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -145,6 +290,8 @@ a{
   background-color: black;
   padding-top: 1%;
   padding-bottom: 1%;
+  font-family: Ink Free;
+  font-size: 21px;
 }
 
 .detective{
@@ -178,14 +325,11 @@ a{
 /*GENERAL*/
 
 .close{/*icono cerrar ventana*/
-  width:25px;
   position: absolute;
   top: 1%;
   left: 1%;
-  fill:#562c6d;
   cursor: pointer;
   z-index: 3;
-  background-color: black;
 }
 
 
@@ -228,9 +372,12 @@ a{
   border: #562c6d solid 3px;
   width: 300px;
   position: absolute;
-  left: 400px;
-  top: 300px;
-  background-color: black;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: 400px;
+  background-color: rgb(255, 255, 255);
   height: 200px;
   
 }
@@ -376,19 +523,20 @@ a{
   background-color: #45a049;
 }
 
-
+/*--------------------------------------------------------------------*/
 /*------------------RESPONSIVE--------------*/
 
 @media screen and (max-width:500px){
   
   .aboutMe{
   overflow-y: scroll;
+  overflow-x: scroll;
   text-align:center;
   position:absolute;
-  top: 1%;
+  top: 350px;
   right: 0;
-  left:60%;
-  width: 100vw;
+  left:10px;
+  width: 100%;
   margin: auto;
   text-align: center;
   background-color: white;
@@ -396,7 +544,7 @@ a{
 }
 .aboutMeImage{
   object-fit: contain;
-  width:100vw;
+  width:100%;
 }
  
 /*----------HTML MYPROJECTS FRAME----------------*/
@@ -407,10 +555,11 @@ a{
   color:black;
   position: absolute;
   text-align: center;
-  margin: auto;
-  left: 70%;
+  margin: 0;
+  width:350px;
+  left: 0px;
   right: 0;
-  top:12%;
+  top:400px;
   z-index: 1;
 }
 .pcImage{
@@ -450,10 +599,11 @@ a{
 /*-----MICROSCOPE-----*/
 .microscopeImage{
   position: absolute;
-  margin:auto;
-  left: 40%;
+  margin:0;
+  left: 0;
   right: 0;
   top:5%;
+  overflow-x: scroll;
   max-width:612px;
 }
 
@@ -465,15 +615,16 @@ a{
   width: 375px;
   position: absolute;
   top: 20%;
-  margin-left: 70%;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #c5c3c3;
   
 }
 /*KEYBOX*/
 .keyBoxImage{
   position: absolute;
-  margin:auto;
-  left: 120%;
+  margin:0;
+  left: 5px;
   right: auto;
   top:15%;
   max-width:400px;
@@ -506,9 +657,10 @@ a{
 
 .pistas{
   position: absolute;
-  margin: auto;
-  left: 80%;
-  right: auto;
+  margin-right: auto;
+  margin-left: auto;
+  left: 0;
+  right: 0;
   top: 30%;
   max-width: 300px;
   background-color: white;

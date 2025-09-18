@@ -1,6 +1,7 @@
 import { Link} from "react-router-dom";
 import { useState,useEffect} from "react";
 import Cookies from 'js-cookie';
+import { Icon } from "@iconify/react";
 function Keybox(){
     const [valores, setValores] = useState(['', '', '']);
 
@@ -22,7 +23,7 @@ function Keybox(){
     return(
         <>
         <div className="keyBoxImage">
-            <Link to="/zone2"><img className="close" src="/close.svg" alt="close"/></Link>
+            <Link to="/zone2"><Icon className="close" icon="solar:close-square-bold" width="35px" color="#9c2796ff" /></Link>
             <div>
                 <img src="/keybox.png" width="400" alt="keybox"/>
             </div>

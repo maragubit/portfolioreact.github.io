@@ -5,6 +5,15 @@ function ProjectList(){
         <div>
             <Carousel>
                 <div>
+                    <img src="gimrutina.jpg" alt="gimRutina" />
+                    <div className="legend">
+                        <h3>GimRutina</h3>
+                        <p>Aplicacion para gestionar rutinas de gimnasio</p>
+                        <p>Back-end: Django (Python)</p>
+                        <p> <a href="https://gimrutina.netlify.app/" target="_blank">gimrutina.netlify.app</a></p>
+                    </div>
+                </div>
+                <div>
                     <img src="webguardian.png" alt="webguardian" />
                     <div className="legend">
                         <h3>Web Guardian</h3>

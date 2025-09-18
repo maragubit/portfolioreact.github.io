@@ -1,10 +1,11 @@
 import { Link, Outlet } from "react-router-dom";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
+import { Icon } from "@iconify/react";
 function Habilidades(){
     return(
         <div className="mySkillsBody">
-            <Link to="/zone2"><img className="close" src="../close.svg" alt="close"/></Link>
+            <Link to="/zone2"><Icon className="close" icon="solar:close-square-bold" width="35px" color="#9c2796ff" /></Link>
              <Carousel>
                 <div>
                     <div className="tablaSkills">
