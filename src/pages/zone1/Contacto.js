@@ -11,7 +11,6 @@ function Contacto(){
         <p><i className='fa fa-envelope' ></i> Email: <a href="mailto:maragubit@gmail.com">maragubit@gmail.com</a></p>
         <p><i className='fa fa-phone' ></i> <a href="tel:+34630457830">Teléfono: +34 630457830</a></p>
         <p><i className='fa fa-whatsapp' ></i> <a href="https://wa.me/34630457830">Whatsapp: +34 630457830</a></p>
-
         </div>
         </div>
         </Container>
