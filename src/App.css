@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'Ink Free';
+  src: 'ink-free.ttf' format('truetype');
+}
 .App {
   text-align: center;
 }
