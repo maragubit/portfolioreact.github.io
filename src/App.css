@@ -342,15 +342,16 @@ a{
 /*--------SKILLS----------*/
 .mySkillsBody{ /*Body del html de my skills*/
   text-align: center;
-  color:black;
-  border: black solid 3px;
+  color:var(--primary) !important;
+  border: var(--primary) solid 3px !important;
   max-width: 375px;
   position: absolute;
+  font-family: Ink Free;
   top: 20%;
   left: 0;
   right: 0;
   margin: auto;
-  background-color: #c5c3c3;
+  background-color: rgb(27, 26, 26) !important;
   
 }
 .mySkillsBody .carousel.carousel-slider {
@@ -360,30 +361,30 @@ a{
     height: 350px;
 }
 
-.tablaSkills table{
-  margin: auto;
-}
 
-.tablaSkills td{
-  padding-right: 20px;
-  text-align: left;
-}
+
+
 
 /*----------CONTACT----------------*/
 .contact{ /*Body del html de my skills*/
   text-align: center;
-  color:#562c6d;
-  border: #562c6d solid 3px;
-  width: 300px;
+  font-family: Ink Free;
+  font-weight: bold;
+  color:var(--primary);
+  background-color: #333;
+  border: var(--primary) solid 3px;
+  max-width: 600px;
   position: absolute;
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto;
   top: 400px;
-  background-color: rgb(255, 255, 255);
   height: 200px;
   
+}
+.contact a{
+  color:black !important;
 }
 
 /*----------HTML ABOUTME FRAME----------------*/

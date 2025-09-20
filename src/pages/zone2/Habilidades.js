@@ -6,7 +6,7 @@ import { Card, CardBody, CardFooter, Col, Container, Row } from "react-bootstrap
 function Habilidades(){
     return(
         <div className="mySkillsBody">
-            <Link to="/zone2"><Icon className="close" icon="solar:close-square-bold" width="35px" color="#9c2796ff" /></Link>
+            <Link to="/zone2"><Icon className="close" icon="solar:close-square-bold" width="35px" color="var(--primary)" /></Link>
              <Carousel>
                 <div>
                     <div className="tablaSkills mt-2">
