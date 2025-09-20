@@ -16,6 +16,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import AppLayout from './layouts/AppLayout';
 import AppLayout2 from './layouts/AppLayout2';
 import Contacto from './pages/zone1/Contacto';
+import CookiesPolicy from './pages/zone1/CookiesPolicy';
 
 
 
@@ -47,8 +48,9 @@ function App() {
             <Route path="aboutMe" element={<AboutMe />} />
             <Route path="myProjects" element={<Proyectos/>} />
             <Route path="contact" element={<Contacto/>} />
+            
           </Route>
-
+          <Route path="/cookies" element={<CookiesPolicy/>} />
           <Route path="zone2/" element={<AppLayout2/>}>
             <Route path="skills" element={<Habilidades/>}/>
             <Route path="microscope" element={<Microscopio/>}/>

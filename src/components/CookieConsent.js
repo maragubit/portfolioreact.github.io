@@ -22,7 +22,7 @@ function CookieConsent() {
 
   return (
     <div className="cookie-consent">
-      <p>Este sitio web usa cookies para mejorar tu experiencia. ¿Aceptas el uso de cookies?</p>
+      <p>Este sitio web usa cookies propias para mejorar tu experiencia. ¿ Aceptas el uso de <a href="/cookies" target="_blank">cookies</a> ?</p>
       <button onClick={handleAcceptCookies}>Aceptar</button>
     </div>
   );
