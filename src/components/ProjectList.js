@@ -5,6 +5,15 @@ function ProjectList(){
         <div>
             <Carousel>
                 <div>
+                    <img src="fitomanager.png" alt="fitomanager" />
+                    <div className="legend">
+                        <h3>Fitomanager</h3>
+                        <p>Plantas medicinales</p>
+                        <p>Django + React</p>
+                        <p> <a href="https://fitomanager.com/" target="_blank">fitomanager.com</a></p>
+                    </div>
+                </div>
+                <div>
                     <img src="gimrutina.jpg" alt="gimRutina" />
                     <div className="legend">
                         <h3>GimRutina</h3>
@@ -65,14 +74,7 @@ function ProjectList(){
                         <p>Back-end: Python (Django)</p>
                     </div>
                 </div>
-                <div>
-                    <img src="fitomanager.png" alt="fitomanager" />
-                    <div className="legend">
-                        <h3>Fitomanager</h3>
-                        <p>Aplicación web plantas medicinales</p>
-                        <p>Back-end: Python (Django)</p>
-                    </div>
-                </div>
+                
                 <div>
                     <img src="encrypt.jpeg" alt="encrypt"/>
                     <div className="legend">
